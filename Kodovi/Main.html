@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<link rel="stylesheet" type="text/css" href="css/Main.css"/>
+</head>
+<body>
+
+	<div id="pozadina">
+		<div id="meni">
+		</div>
+
+		<div id="tools">
+			<div id="grupa" onclick="click1()"> Nova grupa </div>
+			<script>
+				function click1() {
+				    document.getElementById('grupaEdit').style.height='180px';
+				    document.getElementById('obavezaEdit').style.height='0px';
+				}
+			</script>
+			<div id="grupaEdit"></div>
+			<div id="obaveza" onclick="click2()"> Nova obaveza </div>
+			<script>
+				function click2() {
+				    document.getElementById('grupaEdit').style.height='0px';
+				    document.getElementById('obavezaEdit').style.height='180px';
+				}
+			</script>
+			<div id="obavezaEdit"> </div>
+		</div>
+
+		<div id="calendar"></div>
+
+		<div id="dugmejedan"> Save </div>
+		<div id="dugmedva"> Clear All </div>
+	</div>
+
+</body>
+</html>
