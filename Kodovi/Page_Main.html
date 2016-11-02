@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ne znam jos</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Grid_Main.css">
+</head>
+<body>
+	<div class="red jedan">		
+	</div>
+	<div class="red jedan" id="meni">
+		
+	</div>
+	<div class="red jedan">
+	</div>
+	<div class="red dva">
+		<div class="kolona jedan">
+			<div class="red cetiri"></div>
+			<div class="red tri">
+				<div class="kolona tri"> 
+				</div>
+				<div class="kolona cetiri">
+					<div class="red dva" id="inputBox">
+						<div class="input" onclick="click1()">
+							New Group
+						</div>
+						<script>
+							function click1() {
+							    document.getElementById('grupaEdit').style.height='65%';
+							    document.getElementById('obavezaEdit').style.height='0';
+							}
+						</script>
+						<div class="inputBoxBox" id="grupaEdit"></div>
+						<div class="input" onclick="click2()">
+							New Task
+						</div>
+						<script>
+							function click2() {
+							    document.getElementById('grupaEdit').style.height='0';
+							    document.getElementById('obavezaEdit').style.height='65%';
+							}
+						</script>
+						<div class="inputBoxBox" id="obavezaEdit"></div>
+					</div>
+				</div>
+				<div class="kolona tri"> 
+				</div>
+			</div>
+			<div class="red cetiri"></div>
+		</div>
+		<div class="kolona dva">
+			<div class="red cetiri"></div>
+			<div class="red tri">
+				
+			</div>
+			<div class="red cetiri"></div>
+		</div>
+	</div>
+</body>
+</html>
