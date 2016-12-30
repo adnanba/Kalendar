@@ -35,12 +35,22 @@
                     ToolBox:
                     <div id="toolbox">
                         <ul id="toolboxLista">
+                            <?php
+                                if (isset($_REQUEST['groupName']) && isset($_REQUEST['groupColor'])) {
+                                    $xml = new DOMDocument();
+                                    $xml->load("test.xml");
+                                    $root = $xml->documentElement;
+                                    $group = $xml->createElement("Group");
+                                    $group->appendChild($xml->createTextNode($_REQUEST['groupName']));
+                                    $root->appendChild($group);
+                                    $xml->save("test.xml");                                }
+                            ?>
                             <li>
                                 <div class="toolboxItem" onclick="dropDown(1)">
                                     New Group
                                 </div>
                                 <div class="toolboxExpanded" id="tb1">
-                                    <form method="post" action="">
+                                    <form method="get" action="Calendar_Page.php">
                                         Group name: <br>
                                         <input type="text" class="input" name="groupName"> <br>
                                         Group color: <br>
@@ -54,7 +64,7 @@
                                     New Task
                                 </div>
                                 <div class="toolboxExpanded" id="tb2">
-                                    <form method="get" action="">
+                                    <form method="get" action="Calendar_Page.php">
                                         Task name: <br>
                                         <input type="text" name="taskName"> <br>
                                         Group: <br>
