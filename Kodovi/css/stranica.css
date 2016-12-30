@@ -1,8 +1,12 @@
 body{
-    height: 1000px;
+    height: 800px;
     margin: 0%;
     padding: 0%;
     background: deepskyblue;
+}
+
+#body{
+    height: 630px;
 }
 
 #meni{
@@ -40,6 +44,7 @@ body{
 }
 
 #footer{
-    background: darkblue;
+    background: red;
+    height: 50px;
     width: 100%;
 }

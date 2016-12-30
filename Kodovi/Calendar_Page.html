@@ -5,6 +5,9 @@
     <title>Title</title>
 
     <link rel="stylesheet" type="text/css" href="css/stranica.css"/>
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <script src="js/dropdownMeni.js"></script>
+    <script src="js/jscolor.js"></script>
 </head>
 <body>
     <nav id="meni">
@@ -24,19 +27,54 @@
     </nav>
 
     <div id="body">
-        <div>
-            <div></div>
-            <div>
+        <div class="kolona lijeva">
+            <div class="red jedan"></div>
+            <div class="red dva">
+                <div class="kolona jedan"></div>
+                <div class="kolona dva">
+                    ToolBox:
+                    <div id="toolbox">
+                        <ul id="toolboxLista">
+                            <li>
+                                <div class="toolboxItem" onclick="dropDown(1)">
+                                    New Group
+                                </div>
+                                <div class="toolboxExpanded" id="tb1">
+                                    <form method="post" action="">
+                                        Group name: <br>
+                                        <input type="text" class="input" name="groupName"> <br>
+                                        Group color: <br>
+                                        <input class="jscolor input" name="groupColor" value="ab2567"> <br>
+                                        <button type="submit" class="toolboxButton"> Enter </button>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toolboxItem" onclick="dropDown(2)">
+                                    New Task
+                                </div>
+                                <div class="toolboxExpanded" id="tb2">
 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kolona jedan"></div>
             </div>
-            <div></div>
+            <div class="red tri"></div>
         </div>
-            <div></div>
-            <div>
+        <div class="kolona desna">
 
+            <div class="red jedan"></div>
+            <div class="red cetiri">
+                <div class="kolona jedan"></div>
+                <div class="kolona dva">
+
+                </div>
+                <div class="kolona jedan"></div>
             </div>
-            <div></div>
-        <div>
+            <div class="red jedan"></div>
 
         </div>
     </div>

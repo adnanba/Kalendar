@@ -1,0 +1,75 @@
+.kolona{
+    display: inline-block;
+    float: left;
+    min-height: 20px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.red{
+    width: 100%;
+}
+
+.kolona.lijeva{
+    width: 25%;
+}
+
+.kolona.desna{
+    width: 75%;
+}
+
+.kolona.jedan{
+    width: 5%;
+}
+.kolona.dva{
+    width: 90%;
+}
+
+.red.jedan{
+    height: 5%;
+}
+
+.red.dva{
+    height: 70%;
+}
+
+.red.tri{
+    height: 20%;
+}
+
+.red.cetiri{
+    height: 85%;
+}
+
+#toolboxLista{
+    list-style: none;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#toolbox{
+    height: 100%;
+    background: indianred;
+}
+
+.toolboxItem{
+    height: 25px;
+    padding: 25px;
+    background: darkred;
+    text-align: center;
+}
+
+.toolboxExpanded{
+    height: 200px;
+    padding: 10px;
+    background: rebeccapurple;
+    display: none;
+}
+
+.toolboxButton{
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
